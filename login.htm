@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css">
+    <script src="jquery-3.6.4.js"></script>
+    <style>        
+        div#out{
+            position: relative;
+            left: 100px;
+            height: 375pt;
+            width: 350pt;
+            right: 100px;
+            top: 150px;
+            color: goldenrod;
+            background-color: #000505;
+            border-radius: 125px;
+            text-align: left;
+            font-size: 40px;
+        }
+        body{
+            background-color: #7A8B99;
+        }
+        div#in{
+            text-align: center;
+            position: relative;
+            right: 100px;
+            height: 375pt;
+            width:300pt;
+            top: 225px;
+            background-color: #124E78;
+            border-radius: 25px;
+        }
+        input{
+            border-radius: 25px;
+            border: 1px solid ;
+            padding: 0.4rem 1rem;
+        }
+        div.asd{
+            position: relative;
+            top: 100px;
+        }
+        
+        button.type{
+            background: #DB324D;
+            border-radius: 15px;
+            color: antiquewhite;
+            font-size: 20px;
+            border: 1px solid ;
+            padding: 0.4rem 1rem;
+        }
+        button.opp_type{
+            background: #92DCE5;
+            font-size: 20px;            border-radius: 15px;
+            border-radius: 15px;
+            border: 1px solid ;
+            padding: 0.4rem 1rem;
+        }
+        img{
+            border-radius: 125px;
+            background-color: #124E78;
+        }
+    </style>
+    <script>
+        $(document).ready(function(){
+            $("input").focus(function(){
+                $(this).css("background-color","#C4E0F9");
+            });
+            $("input").blur(function(){
+                $(this).css("background-color","white");
+            });
+            $("#to_do").click(function(){
+                location.href="to_do.htm"
+            });
+        });
+    </script>
+</head>
+<body>
+    <div class="float-left" id="out">
+        <p style="font-size: 50px; font-family: 'Courier New', Courier, monospace; color :#272D2D">
+            <div id="out">
+                &emsp;&emsp; DO<br>
+                &emsp;&emsp; ONE THING<br>
+                &emsp;&emsp; EVERY DAY<br>
+                &emsp;&emsp; THAT<br>
+                &emsp;&emsp; <span style="color: aliceblue;">SCARES</span><br>
+                &emsp;&emsp; YOU
+            </div>
+        </p>
+    </div>
+    <div class="float-right" id="in">
+            <div class="asd">
+                <div>
+                    <img src="profile.jpg" height="120px" alt="prfl">
+                </div>
+                <br>
+                <input type="text" placeholder="Username" /><br>
+                <input type="password" placeholder="Password" /><br><br>
+                <button id="to_do" class="type">Login</button><br><br>
+                <button class="opp_type">Create Account</button>
+            </div>
+    </div>
+</body>
+</html>
